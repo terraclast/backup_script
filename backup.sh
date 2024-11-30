@@ -66,7 +66,7 @@ if [[ -d "$BACKUP_OBJECT" ]]; then
 
 elif [[ -f "$BACKUP_OBJECT" ]]; then
     echo "Compressing file: $BACKUP_OBJECT"
-    gzip -c "$BACKUP_OBJECT" > "$ARCHIVE/$name.gz" || { echo "Failed to compress file $BACKUP_OBJECT"; exit 7 }
+    gzip -c "$BACKUP_OBJECT" > "$ARCHIVE/$name.gz" || { echo "Failed to compress file $BACKUP_OBJECT"; exit 7 ;}
 
 fi
 
